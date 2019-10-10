@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         click=findViewById(R.id.button);
-        timerSeekBar= findViewById(R.id.seekBar);
+        timerSeekBar= findViewById(R.id.seekBar);//first try
         timerText =findViewById(R.id.textView);
         timerSeekBar.setMax(600);
         timerSeekBar.setProgress(30);
@@ -71,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 counter(progress);
-                //changes;
-                //changes
             }
 
             @Override
